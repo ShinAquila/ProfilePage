@@ -22,7 +22,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto)); /* Updated minmax value */
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -37,7 +37,10 @@ body {
     0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
     0 100px 80px rgba(0, 0, 0, 0.07);
   position: relative;
-  display: flex; /* Added */
+  display: flex;
+  min-width: 325px;
+  min-height: 400px;
+  
 }
 
 .my_info {
@@ -81,17 +84,24 @@ h4 {
 }
 
 i {
-  padding: 5px;
+  padding: 7px;
 }
 
 a{
   color: black;
 }
 
-.card__text .aboutme {
+.card__text .fun {
   margin: 0;
   color: #999;
   font-size: 0.65em;
+}
+
+.aboutme {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 0.75em;
+  line-height: 1.5;
 }
 
 .educational_bg {
@@ -100,9 +110,7 @@ a{
 
 .educational_bg ul li {
   display: flex;
-  /* Make each list item a flex container */
   align-items: baseline;
-  /* Align items along the baseline */
 }
 
 .educational_bg ul li .level {
@@ -120,25 +128,14 @@ a{
   flex: 1;
 }
 
-p{
+.info p .info_course{
   color: #161A30;
+}
+.school{
+  color: #777777;
 }
 
 .educational_bg p {
   font-size: 0.75em;
-  color: #999;
   text-align: left;
-}
-
-@media (min-width: 425px) {
-  .card {
-  }
-
-  .card:after {
-    
-  }
-
-  .card__info li {
-    
-  }
 }
