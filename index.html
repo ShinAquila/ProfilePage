@@ -1,43 +1,67 @@
 <!DOCTYPE html>
-<!---Coding By CoderGirl!--->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Profle Card UI Design | CoderGirl </title>
-  <!---Custom Css File!--->
-  <link rel="stylesheet" href="style.css">
+  <title> Profile Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/5114ad6b48.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <section class="main">
-  <div class="profile-card">
-    <div class="image">
-      <img src="images/profile.jpg" alt="" class="profile-pic">
-    </div>
-    <div class="data">
-      <h2>Olivia Gomez</h2>
-      <span>Developer & Designer</span>
-    </div>
-    <div class="row">
-      <div class="info">
-        <h3>Following</h3>
-        <span>120</span>
+  <div class="container">
+    <div class="card">
+      <div class="my_info">
+        <img src="assets/pic2.jpg" alt="profile_img" class="card__image" />
+        <div class="card__text">
+          <h3>Vincent Ace Rivera<br><span class="my_title">Developer/Programmer</span></h3>
+          <p class="aboutme">I do NOT enjoy drinking a cup of coffee</p><br>
+
+          <h4>Connect with me</h4>
+          <a href="https://web.facebook.com/v.acerivera" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="https://twitter.com/shin_aquilaaaa" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/vincent-ace-rivera-b97092255/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="https://github.com/ShinAquila" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          
+        </div>
       </div>
-      <div class="info">
-        <h3>Followers</h3>
-        <span>5000</span>
+      <br>
+
+      <div class="card_content">
+        <div class="card_skillsets">
+          <h4 class="content_head">Skills</h4>
+          <div class="skill_icons"></div>
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <i class="fa-brands fa-java fa-2xl"></i>
+          <i class="fa-brands fa-android fa-2xl"></i>
+          <i class="fa-brands fa-php fa-2xl"></i>
+        </div>
+
+        <div class="educational_bg">
+          <h4 class="content_head">Education</h4>
+          <ul>
+            <li>
+              <div class="level">Senior High School</div>
+              <div class="info">
+                <p>Information Communication Technology<br>UM Digos College</p>
+              </div>
+            </li>
+            <li>
+              <div class="level">College</div>
+              <div class="info">
+                <p>Information Technology<br>UM Digos College</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="info">
-        <h3>Posts</h3>
-        <span>209</span>
-      </div>
-    </div>
-    <div class="buttons">
-      <a href="#" class="btn">Message</a>
-      <a href="#" class="btn">Follow Me</a>
+
+
     </div>
   </div>
-</section>
 </body>
+
 </html>

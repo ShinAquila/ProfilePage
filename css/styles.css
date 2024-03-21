@@ -1,0 +1,144 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+body {
+  margin: 0;
+  background: #31304D;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto)); /* Updated minmax value */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.card {
+  border-radius: 0.8em;
+  background-color: #161A30;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  position: relative;
+  display: flex; /* Added */
+}
+
+.my_info {
+  flex: 1;
+  padding: 3.5em;
+  /* background-color: #74c0fc; */
+}
+.my_title{
+  font-size: 0.60em;
+  font-weight: 100;
+}
+
+.card_skillsets,
+.educational_bg {
+  flex: 1;
+  padding: 1.5em;
+  
+}
+.card_content{
+  background-color: #F0ECE5;
+  border-radius: 0.8em;
+}
+
+.card__image {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.card__text h3 {
+  margin-bottom: 0.3em;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+h4 {
+  color: #ffffff;
+}
+
+.content_head{
+  color: black;
+}
+
+i {
+  padding: 5px;
+}
+
+a{
+  color: black;
+}
+
+.card__text .aboutme {
+  margin: 0;
+  color: #999;
+  font-size: 0.65em;
+}
+
+.educational_bg {
+  text-align: center;
+}
+
+.educational_bg ul li {
+  display: flex;
+  /* Make each list item a flex container */
+  align-items: baseline;
+  /* Align items along the baseline */
+}
+
+.educational_bg ul li .level {
+  font-size: 0.80em;
+  flex: 0 0 30%;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.educational_bg ul li .info {
+  flex: 1;
+}
+
+p{
+  color: #161A30;
+}
+
+.educational_bg p {
+  font-size: 0.75em;
+  color: #999;
+  text-align: left;
+}
+
+@media (min-width: 425px) {
+  .card {
+  }
+
+  .card:after {
+    
+  }
+
+  .card__info li {
+    
+  }
+}
